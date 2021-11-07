@@ -19,7 +19,7 @@ function buildCategory(category, widget) {
     }
   }
 
-  content.push(h("h2.category-title", category.name));
+  content.push(h("h1.category-title", category.name));
 
   if (settings.show_description) {
     content.push(
