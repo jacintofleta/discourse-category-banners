@@ -96,7 +96,7 @@ export default createWidget("category-header-widget", {
             h("div.category-content", buildCategory(category, this)),
             h("div.category-icon", {
               attributes: {
-                style: `content:url(${category.uploaded_logo});`,
+                style: `content:url(${category.uploaded_logo?.url});`,
               },
             })
           )
