@@ -93,15 +93,7 @@ export default createWidget("category-header-widget", {
           },
           h(
             "div.category-title-contents.wrap",
-            h(
-              "div.category-content",
-              h("div.category-icon", {
-                attributes: {
-                  style: `content:url(${category.uploaded_logo?.url});`,
-                },
-              }),
-              buildCategory(category, this)
-            )
+            h("div.category-content", buildCategory(category, this))
           )
         );
       }
