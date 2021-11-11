@@ -83,7 +83,7 @@ export default createWidget("category-header-widget", {
         !hideMobile
       ) {
         document.body.classList.add("category-header");
-
+        console.log(category);
         return h(
           `div.category-title-header.category-banner-${category.slug}`,
           {
