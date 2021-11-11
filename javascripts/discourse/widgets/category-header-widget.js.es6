@@ -91,7 +91,7 @@ export default createWidget("category-header-widget", {
               style: `background-color: #f4f4f5; color: #25253d;`,
             },
           },
-          h("div.category-title-contents", buildCategory(category, this))
+          h("div.category-title-contents.wrap", buildCategory(category, this))
         );
       }
     } else {
