@@ -91,7 +91,10 @@ export default createWidget("category-header-widget", {
               style: `background-color: #${category.color}1A;`,
             },
           },
-          h("div.category-title-contents.wrap", buildCategory(category, this))
+          h(
+            "div.category-title-contents.wrap",
+            h("div", buildCategory(category, this))
+          )
         );
       }
     } else {
