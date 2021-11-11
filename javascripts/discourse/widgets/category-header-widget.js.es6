@@ -92,7 +92,7 @@ export default createWidget("category-header-widget", {
             },
           },
           h(
-            "div.category-title-contents.wrap",
+            "div.category-title-contents.wrap div.hola",
             h("div.category-content", buildCategory(category, this))
           )
         );
