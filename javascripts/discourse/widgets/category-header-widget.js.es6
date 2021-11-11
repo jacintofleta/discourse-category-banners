@@ -93,9 +93,9 @@ export default createWidget("category-header-widget", {
           },
           h(
             "div.category-title-contents.wrap",
-            h("div.category-content", buildCategory(category, this))
-          ),
-          h("div.hola")
+            h("div.category-content", buildCategory(category, this)),
+            h("div.hola")
+          )
         );
       }
     } else {
