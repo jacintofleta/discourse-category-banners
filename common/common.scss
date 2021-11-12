@@ -41,3 +41,11 @@ div[class^="category-title-header"] {
     padding-top: 20px;
   }
 }
+
+.category-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 134px;
+  align-items: center;
+  justify-content: center;
+}
