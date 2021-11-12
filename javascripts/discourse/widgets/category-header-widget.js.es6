@@ -28,6 +28,7 @@ function buildCategory(category, widget) {
         h("div.cooked", { innerHTML: category.description })
       )
     );
+    content.push(h("div.category-icon"));
   }
 
   return content;
@@ -100,8 +101,7 @@ export default createWidget("category-header-widget", {
                   style: `align-items: baseline;`,
                 },
               },
-              buildCategory(category, this),
-              "div.category2"
+              buildCategory(category, this)
             )
           )
         );
