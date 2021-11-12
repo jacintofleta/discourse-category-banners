@@ -97,7 +97,7 @@ export default createWidget("category-header-widget", {
               "div.category-content",
               {
                 attributes: {
-                  style: `align-items: left;`,
+                  style: `align-items: baseline;`,
                 },
               },
               buildCategory(category, this)
