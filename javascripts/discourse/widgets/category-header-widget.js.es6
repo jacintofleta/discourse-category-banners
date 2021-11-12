@@ -91,27 +91,18 @@ export default createWidget("category-header-widget", {
               style: `background-color: #${category.color}1A;`,
             },
           },
-          h(
-            "div.category-title-contents.wrap",
-            {
-              attributes: {
-                display: "flex",
-                justifyContent: "space-between",
-              },
-            },
-            [
-              h(
-                "div.category-content",
-                {
-                  attributes: {
-                    style: `align-items: baseline;`,
-                  },
+          h("div.category-title-contents.wrap", [
+            h(
+              "div.category-content",
+              {
+                attributes: {
+                  style: `align-items: baseline;`,
                 },
-                buildCategory(category, this)
-              ),
-              h("div.category-icon"),
-            ]
-          )
+              },
+              buildCategory(category, this)
+            ),
+            h("div.category-icon"),
+          ])
         );
       }
     } else {

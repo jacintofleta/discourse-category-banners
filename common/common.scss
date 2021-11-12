@@ -41,3 +41,8 @@ div[class^="category-title-header"] {
     padding-top: 20px;
   }
 }
+
+.category-title-contents {
+  display: flex;
+  justify-content: space-between;
+}
