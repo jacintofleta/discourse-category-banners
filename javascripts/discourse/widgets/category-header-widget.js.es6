@@ -24,8 +24,11 @@ function buildCategory(category, widget) {
   if (settings.show_description) {
     content.push(
       h(
-        "div.category-title-description",
-        h("div.cooked", { innerHTML: category.description })
+        "div.category-content-text",
+        h(
+          "div.category-title-description",
+          h("div.cooked", { innerHTML: category.description })
+        )
       )
     );
     content.push(h("div.category-icon"));
