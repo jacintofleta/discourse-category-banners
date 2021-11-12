@@ -100,7 +100,8 @@ export default createWidget("category-header-widget", {
                   style: `align-items: baseline;`,
                 },
               },
-              buildCategory(category, this)
+              buildCategory(category, this),
+              "div.category2"
             )
           )
         );
