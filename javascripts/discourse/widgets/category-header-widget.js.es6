@@ -91,8 +91,7 @@ export default createWidget("category-header-widget", {
               style: `background-color: #${category.color}1A;`,
             },
           },
-          h(
-            "div.category-title-contents.wrap",
+          h("div.category-title-contents.wrap", [
             h(
               "div.category-content",
               {
@@ -101,9 +100,9 @@ export default createWidget("category-header-widget", {
                 },
               },
               buildCategory(category, this)
-            )
-          ),
-          h("div.prueba")
+            ),
+            h("div.hola"),
+          ])
         );
       }
     } else {
