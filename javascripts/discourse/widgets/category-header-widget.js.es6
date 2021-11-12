@@ -100,9 +100,9 @@ export default createWidget("category-header-widget", {
                   style: `align-items: baseline;`,
                 },
               },
-              buildCategory(category, this),
-              "div.prueba"
-            )
+              buildCategory(category, this)
+            ),
+            h("div.prueba")
           )
         );
       }
