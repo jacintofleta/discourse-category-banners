@@ -102,7 +102,8 @@ export default createWidget("category-header-widget", {
                 },
               },
               buildCategory(category, this)
-            )
+            ),
+            h("div.category-icon")
           )
         );
       }
