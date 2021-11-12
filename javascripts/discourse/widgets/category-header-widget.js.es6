@@ -101,9 +101,9 @@ export default createWidget("category-header-widget", {
                 },
               },
               buildCategory(category, this)
-            ),
-            h("div.prueba")
-          )
+            )
+          ),
+          h("div.prueba")
         );
       }
     } else {
